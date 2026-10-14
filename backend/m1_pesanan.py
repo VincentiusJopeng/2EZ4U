@@ -25,6 +25,16 @@ class Array:
         self.data[i] = v
         self.size += 1
 
+    def delete(self, i):
+        if i < 0 or i >= self.size:
+            raise IndexError("Index out of bounds")
+        removed = self.data[i]
+        for j in range(i, self.size - 1):
+            self.data[j] = self.data[j + 1]
+        self.data[self.size - 1] = None
+        self.size -= 1
+        return removed
+
     def _grow(self):
         new_capacity = self.capacity * 2
         new_data = [None] * new_capacity
@@ -48,4 +58,9 @@ if __name__ == "__main__":
         a.append("O-00" + str(i))
     print(a.get(0), a.get(9))
     print(a.size, a.capacity)
-    
+
+    print(b.delete(0))
+    print(b.delete(b.size - 1))
+    for k in range(b.size):
+        print(b.get(k), end=" ")
+    print()
