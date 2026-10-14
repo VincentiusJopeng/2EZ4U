@@ -1,15 +1,16 @@
 # 2EZ4U APP
 
-Proyek Struktur Data & Analisa Algoritma 
+Proyek Struktur Data & Analisa Algoritma
+
 Proyek ini berisi backend aplikasi layanan antar makanan versi sederhana (seperti GoFood) yang menggunakan data 200.000 pesanan dari file CSV.
 
-Nama: Vincentius Jopeng
-NRP: 5024251120
+- Nama: Vincentius Jopeng
+- NRP: 5024251120
 
-Progress saat ini: 
--M1
--M2
--M3
+Progress saat ini:
+- M1
+- M2
+- M3
 
 
 ## Cara Menjalankan
