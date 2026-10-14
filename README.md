@@ -16,25 +16,25 @@ Progress saat ini:
 ## Cara Menjalankan
 
 Program ini membutuhkan Python 3.11 atau lebih baru. Tidak ada library tambahan yang perlu diinstal karena Tkinter sudah termasuk dalam Python.
-______________
+```
 python app.py
-______________
+```
 
 Setelah jendela terbuka, klik menu `Load` terlebih dahulu untuk membaca data, lalu pilih menu di sebelah kiri dan klik `JALANKAN`.
 Kotak COMMAND di bagian bawah mencatat setiap perintah yang dijalankan beserta waktunya.
 
 Untuk menguji backend tanpa UI, jalankan perintah berikut dari folder utama:
 
-____________________________
+```
 python -m backend.m1_pesanan
 python -m backend.m2_antrean
 python -m backend.m3_laporan
-____________________________
+```
 
 
 ## Struktur Folder
 
-____________________________________________________________________
+```
 2EZ4U/
 |-- app.py              -> program utama
 |-- data/               -> pesanan.csv dan peta.csv
@@ -44,7 +44,7 @@ ____________________________________________________________________
 |   |-- m3_laporan.py   -> M3: sort dan search
 |-- frontend/
 |   |-- ui.py           -> antarmuka Tkinter
-____________________________________________________________________
+```
 
 Sesuai aturan proyek, saya tidak menggunakan dict, set, sorted, .sort(), heapq, bisect, maupun collections.
 List hanya digunakan sebagai array biasa.
